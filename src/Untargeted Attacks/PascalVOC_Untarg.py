@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader
 import torchvision
 from torchvision import models
 from torchvision import datasets, transforms as T
-from utils import decode_segmap, IoUAcc
+from utils import decode_segmap, IoUAcc, pgd, pgd_steep
 
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
