@@ -51,28 +51,3 @@ ypa1 = net((X.float()+ delta1.float()))['out']
 n = torch.softmax(ypa1,1) 
 preda1 = torch.argmax(n,1)
 IoUa1, Acca1 = IoUAcc(y, preda1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
