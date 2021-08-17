@@ -22,4 +22,6 @@ Here the second image in the batch of 4 images is targeted and it is observed th
  ### Image Scaling Attacks
  Here we use an target image to perturbate in a way that the original image predicts actual segmentation map when sent in with original size but when the image is scaled, then it outputs the targeted segmentation map. This is very good area of research because in many of the applications of deep learning, images are always resized to be input to the network. Sample images to be updated soon.
 
+The scaling part of this attack is completely taken from the repository by Erwin Quiring (https://github.com/EQuiw/2019-scalingattack) where they have described a novel method to illustrate the image scaling attack. We have applied his concept to our targeted segmentation map generation. 
+
 
