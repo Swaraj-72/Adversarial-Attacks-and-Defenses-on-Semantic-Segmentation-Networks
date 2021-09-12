@@ -49,7 +49,7 @@ X, y = torch.stack(X), torch.tensor(y)
 net = models.segmentation.deeplabv3_resnet101(pretrained=True, progress=True, num_classes=21, aux_loss=None).eval()
 
 yp = net(X)['out']
-yp.size()
+yp = yp
 pred = torch.argmax(yp,1)
 IoUAcc(y, pred)
 
